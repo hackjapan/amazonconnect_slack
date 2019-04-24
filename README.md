@@ -1,4 +1,6 @@
 # amazonconnect_slack
+![Amazon Connect Notification on Slack](https://i.gyazo.com/1308195568b5b505c36c2eef874ad649.png)
+
 Amazon Connect to Slack Notification Integration
 
 Amazon ConnectとSlack通知を連携するためのPythonで書かれたLambda用のコードです。
