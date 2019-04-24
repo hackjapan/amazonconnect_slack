@@ -11,10 +11,9 @@ def lambda_handler(event, context):
  msg = event['Details']['Parameters']['message']
 
  ## Post it to Slack
-# SLACK_WEBHOOK = SLACK_WEBHOOK
- payload_dic = {
+ slack_push = {
     "text": "新着通話の着信中 `" + msg + "`",
     "username": "Amazon Connect",
     "channel": SLACK_CHANNEL,
  }
- r = requests.post(SLACK_WEBHOOK, data=json.dumps(payload_dic))
+ request = requests.post(SLACK_WEBHOOK, data=json.dumps(slack_push))
